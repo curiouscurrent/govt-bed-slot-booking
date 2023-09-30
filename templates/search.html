@@ -1,0 +1,24 @@
+{% extends "navbar.html" %}
+{% block title %}
+Search User Details
+{% endblock title %}
+{% block body %}
+
+<div class="container mt-4">
+    <div class="display-4 text-center text-info">Search User Details</div>
+    <br>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form action="/search" method="post">
+                <div class="input-group">
+                    <input type="text" class="form-control" name="search_query" placeholder="Search by Name, Phone, or UPI ID" required>
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="submit">Search</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}

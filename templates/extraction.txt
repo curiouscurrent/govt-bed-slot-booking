@@ -1,0 +1,10 @@
+<!--assign beds on  priority based on the oxygen levels-->
+
+spo2 = request.form.get('spo2')
+Based on oxygen levels give priority to the patients
+oxygen levels < 100 (range).
+if spo2 > 50:
+    priority queue ?
+    
+    
+
